@@ -12,6 +12,9 @@ for i in range(len(arr)):
     if(arr[i] == 0):
         break
 #arr[cnt - 1] = 0(마지막 입력) 
-for i in range(cnt - 2, -1, -1):
+if arr[cnt - 1] == 0:
+    cnt = cnt - 1
+
+for i in range(cnt - 1, -1, -1):
     print(arr[i], end = " ")
 
