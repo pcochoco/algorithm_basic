@@ -1,5 +1,5 @@
 id, lev = input().split()
-int(lev)
+#lev = int(lev) -> int(lev)는 lev을 lev 변수에 저장해주지 않음 
 
 class User:
     def __init__(self, id = "codetree", lev = 10):
