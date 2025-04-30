@@ -9,6 +9,6 @@ class User:
 user = User()
 print("user %s lv %d" %(user.id, user.lev))
 
-user = User("hello", 28)
+user = User(id, int(lev))
 print("user %s lv %d" %(user.id, user.lev))
 
