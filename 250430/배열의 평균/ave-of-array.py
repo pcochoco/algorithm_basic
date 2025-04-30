@@ -18,7 +18,7 @@ for j in range(4):
     print(sum / 2, end = " ")
 print()
 
-print(all_sum / 8) #전체 8 요소 
+print("%.1f", all_sum / 8) #전체 8 요소 
     
 
 
