@@ -6,8 +6,11 @@ for i in range(n):
 '''
 
 for i in range(1, n + 1): # 1~n
-    for j in range(i): # 
-        print("*", end = "")
+    for j in range(2 * i - 1): 
+        #1 == 2 * 1 - 1 #0 -> 1
+        #3 == 2 * 2 - 1 #0 1 2 -> 3
+
+        print("*"  , end = "")
     print()
 
 '''
