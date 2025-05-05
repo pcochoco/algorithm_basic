@@ -16,7 +16,7 @@ for i in range(n):
             arr[j][k] += 1
             #넓이 = 1의 개수를 더함 
             
-            if(arr[j][k] == 2):
+            if(arr[j][k] != 1):
                 continue 
             sum += 1 
 
