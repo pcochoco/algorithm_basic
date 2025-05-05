@@ -1,6 +1,6 @@
 n = int(input())
 
-arr = [0] * 110
+arr = [0] * 200
 
 for i in range(n):
     x1, x2 = map(int, input().split())
@@ -13,7 +13,7 @@ for i in range(n):
 
 answer = 0 
 
-for i in range(110):
+for i in range(200):
     if answer < arr[i]: 
         answer = arr[i] 
     
