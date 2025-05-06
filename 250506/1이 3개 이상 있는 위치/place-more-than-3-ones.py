@@ -16,9 +16,6 @@ arr = [list(map(int, input().split())) for _ in range(n)]
 dx = [0, 1, 0, -1]
 dy = [1, 0, -1, 0]
 
-x, y = 0, 0
-cnt = [[0] * n for i in range(n)]
-
 sum = 0
 for x in range(n): #모든 좌표에 대해 
     for y in range(n):
