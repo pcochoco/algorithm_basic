@@ -19,11 +19,10 @@ dy = [1, 0, -1, 0]
 x, y = 0, 0
 cnt = [[0] * n for i in range(n)]
 
-
-for k in range(n): #모든 좌표에 대해 
-    for j in range(n):
-        x, y = k, j
-
+sum = 0
+for x in range(n): #모든 좌표에 대해 
+    for y in range(n):
+        cnt = 0 
         for i in range(4): #모든 방향에 대해 
             nx = x + dx[i] 
             ny = y + dy[i]
@@ -32,11 +31,7 @@ for k in range(n): #모든 좌표에 대해
                 continue 
 
             if arr[nx][ny] == 1:
-                cnt[x][y] += 1 #해당하는 위치에 
+                cnt += 1 #해당하는 위치에 
+        if cnt >= 3: sum += 1 
 
-sum = 0 #칸의 수 
-for i in range(len(cnt)):
-    for j in range(len(cnt)):
-        if cnt[i][j] >= 3:
-            sum += 1 
 print(sum)
