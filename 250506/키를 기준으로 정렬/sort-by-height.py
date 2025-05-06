@@ -6,7 +6,7 @@ class User:
         self.weight = int(data[2])
 
 n = int(input())
-arr = [User(input().split()) for i in range(5)]
+arr = [User(input().split()) for i in range(n)]
 arr.sort(key = lambda x : x.height)
 
 for i in arr:
